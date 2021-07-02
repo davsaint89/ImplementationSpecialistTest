@@ -1,0 +1,666 @@
+2021-07-01 00:51:37,756- START> ======================================= 
+2021-07-01 00:51:37,757- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 00:51:37,769- Using Request Target:   /pts/v2/payments
+2021-07-01 00:51:37,769- Authentication Type:   http_signature
+2021-07-01 00:51:37,769- Request-Type:      POST
+2021-07-01 00:51:37,769- Content-Type:   application/json
+2021-07-01 00:51:37,769- v-c-merchant-id:   david_payments
+2021-07-01 00:51:37,769- Date:   Thu, 01 Jul 2021 00:51:37 GMT
+2021-07-01 00:51:37,769- Host:   apitest.cybersource.com
+2021-07-01 00:51:37,770- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 00:51:37,770- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="5eW+4AKJMuh7fqLQvukCba5ejf1fPW44XsJ+Vqgy7zw="
+2021-07-01 00:51:38,657- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 132, in post
+    return Response(salida.json())
+AttributeError: 'PtsV2PaymentsPost201Response' object has no attribute 'json'
+2021-07-01 00:51:58,814- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 00:52:07,066- START> ======================================= 
+2021-07-01 00:52:07,151- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 00:52:07,152- Using Request Target:   /pts/v2/payments
+2021-07-01 00:52:07,152- Authentication Type:   http_signature
+2021-07-01 00:52:07,153- Request-Type:      POST
+2021-07-01 00:52:07,153- Content-Type:   application/json
+2021-07-01 00:52:07,153- v-c-merchant-id:   david_payments
+2021-07-01 00:52:07,153- Date:   Thu, 01 Jul 2021 00:52:07 GMT
+2021-07-01 00:52:07,153- Host:   apitest.cybersource.com
+2021-07-01 00:52:07,153- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 00:52:07,153- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="K0W1XJ/lRqNvGsyQdC8pzPi6eqJ8AR1l6O8NAVQDp2A="
+2021-07-01 00:52:08,262- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PtsV2PaymentsPost201Response is not JSON serializable
+2021-07-01 00:55:50,775- START> ======================================= 
+2021-07-01 00:55:50,844- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 00:55:50,845- Using Request Target:   /pts/v2/payments
+2021-07-01 00:55:50,845- Authentication Type:   http_signature
+2021-07-01 00:55:50,845- Request-Type:      POST
+2021-07-01 00:55:50,846- Content-Type:   application/json
+2021-07-01 00:55:50,846- v-c-merchant-id:   david_payments
+2021-07-01 00:55:50,846- Date:   Thu, 01 Jul 2021 00:55:50 GMT
+2021-07-01 00:55:50,846- Host:   apitest.cybersource.com
+2021-07-01 00:55:50,846- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 00:55:50,846- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="MrwAArZLLiNLnfumD2Xe35y1dCAXLzTAsTlw1wb5I9Q="
+2021-07-01 00:55:51,571- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 132, in post
+    return Response(salida['API RESPONSE BODY'])
+TypeError: 'PtsV2PaymentsPost201Response' object is not subscriptable
+2021-07-01 00:58:41,715- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 00:58:47,816- START> ======================================= 
+2021-07-01 00:58:47,816- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 00:58:47,817- Using Request Target:   /pts/v2/payments
+2021-07-01 00:58:47,817- Authentication Type:   http_signature
+2021-07-01 00:58:47,818- Request-Type:      POST
+2021-07-01 00:58:47,818- Content-Type:   application/json
+2021-07-01 00:58:47,818- v-c-merchant-id:   david_payments
+2021-07-01 00:58:47,818- Date:   Thu, 01 Jul 2021 00:58:47 GMT
+2021-07-01 00:58:47,818- Host:   apitest.cybersource.com
+2021-07-01 00:58:47,818- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 00:58:47,818- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="L6V+91zPOoRGxG6+V7Di0Xn8GaoLHKaOI1gcx0t4tlg="
+2021-07-01 00:58:48,805- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 132, in post
+    return Response(salida['API RESPONSE BODY'])
+TypeError: 'NoneType' object is not subscriptable
+2021-07-01 00:58:54,839- START> ======================================= 
+2021-07-01 00:58:54,840- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 00:58:54,841- Using Request Target:   /pts/v2/payments
+2021-07-01 00:58:54,841- Authentication Type:   http_signature
+2021-07-01 00:58:54,841- Request-Type:      POST
+2021-07-01 00:58:54,841- Content-Type:   application/json
+2021-07-01 00:58:54,841- v-c-merchant-id:   david_payments
+2021-07-01 00:58:54,841- Date:   Thu, 01 Jul 2021 00:58:54 GMT
+2021-07-01 00:58:54,841- Host:   apitest.cybersource.com
+2021-07-01 00:58:54,842- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 00:58:54,842- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="LqPRurQr0f7uKbPf4dNRkvm900ibkOsKfhesqBsV0to="
+2021-07-01 00:58:55,265- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 132, in post
+    return Response(salida['API RESPONSE BODY'])
+TypeError: 'NoneType' object is not subscriptable
+2021-07-01 00:59:08,877- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 00:59:14,520- START> ======================================= 
+2021-07-01 00:59:14,520- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 00:59:14,521- Using Request Target:   /pts/v2/payments
+2021-07-01 00:59:14,521- Authentication Type:   http_signature
+2021-07-01 00:59:14,521- Request-Type:      POST
+2021-07-01 00:59:14,521- Content-Type:   application/json
+2021-07-01 00:59:14,521- v-c-merchant-id:   david_payments
+2021-07-01 00:59:14,521- Date:   Thu, 01 Jul 2021 00:59:14 GMT
+2021-07-01 00:59:14,521- Host:   apitest.cybersource.com
+2021-07-01 00:59:14,521- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 00:59:14,521- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="9V/CoVKkLato5txZMqX2dNhOKkCLNZN8G2WEq3lt/yc="
+2021-07-01 00:59:15,410- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 132, in post
+    return Response(salida['API RESPONSE BODY'])
+TypeError: 'PtsV2PaymentsPost201Response' object is not subscriptable
+2021-07-01 01:01:38,535- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 01:02:36,022- START> ======================================= 
+2021-07-01 01:02:36,023- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 01:02:36,024- Using Request Target:   /pts/v2/payments
+2021-07-01 01:02:36,024- Authentication Type:   http_signature
+2021-07-01 01:02:36,024- Request-Type:      POST
+2021-07-01 01:02:36,025- Content-Type:   application/json
+2021-07-01 01:02:36,025- v-c-merchant-id:   david_payments
+2021-07-01 01:02:36,025- Date:   Thu, 01 Jul 2021 01:02:36 GMT
+2021-07-01 01:02:36,025- Host:   apitest.cybersource.com
+2021-07-01 01:02:36,025- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 01:02:36,025- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="EEn3kzdSC00qd1w+pEXY36CWSR5cywiLiye3bf+QCQ4="
+2021-07-01 01:02:50,308- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 01:02:55,395- START> ======================================= 
+2021-07-01 01:02:55,396- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 01:02:55,396- Using Request Target:   /pts/v2/payments
+2021-07-01 01:02:55,396- Authentication Type:   http_signature
+2021-07-01 01:02:55,396- Request-Type:      POST
+2021-07-01 01:02:55,396- Content-Type:   application/json
+2021-07-01 01:02:55,396- v-c-merchant-id:   david_payments
+2021-07-01 01:02:55,396- Date:   Thu, 01 Jul 2021 01:02:55 GMT
+2021-07-01 01:02:55,396- Host:   apitest.cybersource.com
+2021-07-01 01:02:55,396- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 01:02:55,396- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="rQK5ic3xmjqKRl3U3PU23PdUM2RITfHLGazfmYBClQA="
+2021-07-01 01:02:56,129- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 132, in post
+    return Response(salida.json())
+AttributeError: 'str' object has no attribute 'json'
+2021-07-01 01:04:20,511- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 01:04:25,173- START> ======================================= 
+2021-07-01 01:04:25,174- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 01:04:25,176- Using Request Target:   /pts/v2/payments
+2021-07-01 01:04:25,176- Authentication Type:   http_signature
+2021-07-01 01:04:25,176- Request-Type:      POST
+2021-07-01 01:04:25,176- Content-Type:   application/json
+2021-07-01 01:04:25,177- v-c-merchant-id:   david_payments
+2021-07-01 01:04:25,177- Date:   Thu, 01 Jul 2021 01:04:25 GMT
+2021-07-01 01:04:25,177- Host:   apitest.cybersource.com
+2021-07-01 01:04:25,177- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 01:04:25,177- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="eSPf+lD3sSQzKyfegxN7WdURB76zKwheAMPoqHoYaRg="
+2021-07-01 01:04:55,893- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 01:05:04,474- START> ======================================= 
+2021-07-01 01:05:04,475- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 01:05:04,476- Using Request Target:   /pts/v2/payments
+2021-07-01 01:05:04,476- Authentication Type:   http_signature
+2021-07-01 01:05:04,476- Request-Type:      POST
+2021-07-01 01:05:04,476- Content-Type:   application/json
+2021-07-01 01:05:04,476- v-c-merchant-id:   david_payments
+2021-07-01 01:05:04,476- Date:   Thu, 01 Jul 2021 01:05:04 GMT
+2021-07-01 01:05:04,476- Host:   apitest.cybersource.com
+2021-07-01 01:05:04,476- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 01:05:04,476- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="R7zdnxDWrk4RX0J1PUqf1JfO+NZ3VCG4LDMvrV7AWDM="
+2021-07-01 01:05:05,388- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 132, in post
+    return Response(json.loads(salida, indent=2))
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+TypeError: __init__() got an unexpected keyword argument 'indent'
+2021-07-01 01:05:15,763- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 01:05:20,805- START> ======================================= 
+2021-07-01 01:05:20,806- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 01:05:20,807- Using Request Target:   /pts/v2/payments
+2021-07-01 01:05:20,807- Authentication Type:   http_signature
+2021-07-01 01:05:20,807- Request-Type:      POST
+2021-07-01 01:05:20,807- Content-Type:   application/json
+2021-07-01 01:05:20,807- v-c-merchant-id:   david_payments
+2021-07-01 01:05:20,807- Date:   Thu, 01 Jul 2021 01:05:20 GMT
+2021-07-01 01:05:20,807- Host:   apitest.cybersource.com
+2021-07-01 01:05:20,807- Digest:SHA-256=3nkbA1yHnl28vD5FFXgRJ1qOmBiq8/zbDsN5uJ1xoFE=
+2021-07-01 01:05:20,807- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="SvWdZITD7FVtMI1okkcrT2C/ABF+741S/0CZd//8fPA="
+2021-07-01 14:22:41,734- START> ======================================= 
+2021-07-01 14:22:41,792- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 14:22:41,793- Using Request Target:   /pts/v2/payments
+2021-07-01 14:22:41,794- Authentication Type:   http_signature
+2021-07-01 14:22:41,794- Request-Type:      POST
+2021-07-01 14:22:41,794- Content-Type:   application/json
+2021-07-01 14:22:41,794- v-c-merchant-id:   david_payments
+2021-07-01 14:22:41,795- Date:   Thu, 01 Jul 2021 14:22:41 GMT
+2021-07-01 14:22:41,795- Host:   apitest.cybersource.com
+2021-07-01 14:22:41,795- Digest:SHA-256=u/HeLefPvfsHZMEOA+ujGzm7CLyg/on5orvR+6hpsTg=
+2021-07-01 14:22:41,795- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="tKsW8leEodXeUFLFPMhsGe81hoecd0WHu5JLBNKcVZE="
+2021-07-01 14:28:01,993- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 15:02:09,981- START> ======================================= 
+2021-07-01 15:02:10,006- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 15:02:10,008- Using Request Target:   /pts/v2/payments
+2021-07-01 15:02:10,009- Authentication Type:   http_signature
+2021-07-01 15:02:10,009- Request-Type:      POST
+2021-07-01 15:02:10,009- Content-Type:   application/json
+2021-07-01 15:02:10,009- v-c-merchant-id:   david_payments
+2021-07-01 15:02:10,009- Date:   Thu, 01 Jul 2021 15:02:10 GMT
+2021-07-01 15:02:10,009- Host:   apitest.cybersource.com
+2021-07-01 15:02:10,010- Digest:SHA-256=u/HeLefPvfsHZMEOA+ujGzm7CLyg/on5orvR+6hpsTg=
+2021-07-01 15:02:10,010- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="LdELdzZHb8LkcV5sXN9Rd8ZVtZAuuR5VEfcOiuRVVwA="
+2021-07-01 15:21:54,757- START> ======================================= 
+2021-07-01 15:21:54,786- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 15:21:54,787- Using Request Target:   /pts/v2/payments
+2021-07-01 15:21:54,788- Authentication Type:   http_signature
+2021-07-01 15:21:54,788- Request-Type:      POST
+2021-07-01 15:21:54,788- Content-Type:   application/json
+2021-07-01 15:21:54,788- v-c-merchant-id:   david_payments
+2021-07-01 15:21:54,788- Date:   Thu, 01 Jul 2021 15:21:54 GMT
+2021-07-01 15:21:54,788- Host:   apitest.cybersource.com
+2021-07-01 15:21:54,789- Digest:SHA-256=RoacIldXxAD1phwB44YNN2PgQcbh78UuZWmlChLQGmg=
+2021-07-01 15:21:54,789- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="QLRb/DeVzTUkjdLyweJGqsPQEoB+3gBp9SmScIsQvBk="
+2021-07-01 15:52:05,426- START> ======================================= 
+2021-07-01 15:52:05,540- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 15:52:05,710- Using Request Target:   /pts/v2/payments
+2021-07-01 15:52:05,710- Authentication Type:   http_signature
+2021-07-01 15:52:05,710- Request-Type:      POST
+2021-07-01 15:52:05,710- Content-Type:   application/json
+2021-07-01 15:52:05,710- v-c-merchant-id:   david_payments
+2021-07-01 15:52:05,711- Date:   Thu, 01 Jul 2021 15:52:05 GMT
+2021-07-01 15:52:05,711- Host:   apitest.cybersource.com
+2021-07-01 15:52:05,711- Digest:SHA-256=u/HeLefPvfsHZMEOA+ujGzm7CLyg/on5orvR+6hpsTg=
+2021-07-01 15:52:05,711- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="YNME/AkSh1skjahx+wpuYocnrz4x7Xg0d8PH8HH/O/A="
+2021-07-01 17:31:03,405- START> ======================================= 
+2021-07-01 17:31:03,566- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 17:31:03,568- Using Request Target:   /pts/v2/payments
+2021-07-01 17:31:03,569- Authentication Type:   http_signature
+2021-07-01 17:31:03,569- Request-Type:      POST
+2021-07-01 17:31:03,569- Content-Type:   application/json
+2021-07-01 17:31:03,569- v-c-merchant-id:   david_payments
+2021-07-01 17:31:03,570- Date:   Thu, 01 Jul 2021 17:31:03 GMT
+2021-07-01 17:31:03,570- Host:   apitest.cybersource.com
+2021-07-01 17:31:03,570- Digest:SHA-256=u/HeLefPvfsHZMEOA+ujGzm7CLyg/on5orvR+6hpsTg=
+2021-07-01 17:31:03,570- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="lheJ/GZNs8y1k+9s2TLYS7tgGz54OyCmYG5sLljfDcI="
+2021-07-01 17:31:04,340- START> ======================================= 
+2021-07-01 17:31:04,341- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 17:31:04,341- Using Request Target:   /pts/v2/payments/6251606641646475804006/captures
+2021-07-01 17:31:04,341- Authentication Type:   http_signature
+2021-07-01 17:31:04,341- Request-Type:      POST
+2021-07-01 17:31:04,341- Content-Type:   application/json
+2021-07-01 17:31:04,341- v-c-merchant-id:   david_payments
+2021-07-01 17:31:04,341- Date:   Thu, 01 Jul 2021 17:31:04 GMT
+2021-07-01 17:31:04,341- Host:   apitest.cybersource.com
+2021-07-01 17:31:04,342- Digest:SHA-256=5lQfEe80qmigY8/fm/GsoG4JnJuBafFjThBDABPI7QI=
+2021-07-01 17:31:04,342- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="HZeDFDN1tlOYv98v4hBKs/YRcyOj39udbBWyileOE/o="
+2021-07-01 17:31:04,975- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2021-07-01 17:33:14,118- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 17:33:25,229- START> ======================================= 
+2021-07-01 17:33:25,230- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 17:33:25,231- Using Request Target:   /pts/v2/payments
+2021-07-01 17:33:25,231- Authentication Type:   http_signature
+2021-07-01 17:33:25,231- Request-Type:      POST
+2021-07-01 17:33:25,231- Content-Type:   application/json
+2021-07-01 17:33:25,231- v-c-merchant-id:   david_payments
+2021-07-01 17:33:25,231- Date:   Thu, 01 Jul 2021 17:33:25 GMT
+2021-07-01 17:33:25,232- Host:   apitest.cybersource.com
+2021-07-01 17:33:25,232- Digest:SHA-256=u/HeLefPvfsHZMEOA+ujGzm7CLyg/on5orvR+6hpsTg=
+2021-07-01 17:33:25,232- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="XOlq29zDtQ1QNs6WkgOpR98eELIoyhGC9L3tmPvA+Bo="
+2021-07-01 17:33:25,943- START> ======================================= 
+2021-07-01 17:33:25,944- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 17:33:25,945- Using Request Target:   /pts/v2/payments/6251608057226460504003/captures
+2021-07-01 17:33:25,946- Authentication Type:   http_signature
+2021-07-01 17:33:25,946- Request-Type:      POST
+2021-07-01 17:33:25,946- Content-Type:   application/json
+2021-07-01 17:33:25,946- v-c-merchant-id:   david_payments
+2021-07-01 17:33:25,946- Date:   Thu, 01 Jul 2021 17:33:25 GMT
+2021-07-01 17:33:25,946- Host:   apitest.cybersource.com
+2021-07-01 17:33:25,947- Digest:SHA-256=5lQfEe80qmigY8/fm/GsoG4JnJuBafFjThBDABPI7QI=
+2021-07-01 17:33:25,947- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="lpgyANvS5aEarvyVrvEFZQr9lqmXEJThLvCiTrO6bV0="
+2021-07-01 17:33:48,736- START> ======================================= 
+2021-07-01 17:33:48,737- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 17:33:48,738- Using Request Target:   /pts/v2/payments
+2021-07-01 17:33:48,738- Authentication Type:   http_signature
+2021-07-01 17:33:48,738- Request-Type:      POST
+2021-07-01 17:33:48,738- Content-Type:   application/json
+2021-07-01 17:33:48,739- v-c-merchant-id:   david_payments
+2021-07-01 17:33:48,739- Date:   Thu, 01 Jul 2021 17:33:48 GMT
+2021-07-01 17:33:48,739- Host:   apitest.cybersource.com
+2021-07-01 17:33:48,739- Digest:SHA-256=RoacIldXxAD1phwB44YNN2PgQcbh78UuZWmlChLQGmg=
+2021-07-01 17:33:48,739- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="D/WU+pOeoGHKY65msHPQySoLtbYgj+bjz087GAWBHK8="
+2021-07-01 18:48:10,788- START> ======================================= 
+2021-07-01 18:48:10,850- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 18:48:10,852- Using Request Target:   /pts/v2/payments
+2021-07-01 18:48:10,852- Authentication Type:   http_signature
+2021-07-01 18:48:10,853- Request-Type:      POST
+2021-07-01 18:48:10,853- Content-Type:   application/json
+2021-07-01 18:48:10,853- v-c-merchant-id:   david_payments
+2021-07-01 18:48:10,853- Date:   Thu, 01 Jul 2021 18:48:10 GMT
+2021-07-01 18:48:10,853- Host:   apitest.cybersource.com
+2021-07-01 18:48:10,853- Digest:SHA-256=u/HeLefPvfsHZMEOA+ujGzm7CLyg/on5orvR+6hpsTg=
+2021-07-01 18:48:10,853- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="Jx4wc/0wiv5mGAv/JiRZEHt0L7KBsCjQRP+at+l/DT8="
+2021-07-01 18:48:11,603- START> ======================================= 
+2021-07-01 18:48:11,604- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 18:48:11,605- Using Request Target:   /pts/v2/payments/6251652914166666704005/reversals
+2021-07-01 18:48:11,606- Authentication Type:   http_signature
+2021-07-01 18:48:11,606- Request-Type:      POST
+2021-07-01 18:48:11,606- Content-Type:   application/json
+2021-07-01 18:48:11,606- v-c-merchant-id:   david_payments
+2021-07-01 18:48:11,606- Date:   Thu, 01 Jul 2021 18:48:11 GMT
+2021-07-01 18:48:11,606- Host:   apitest.cybersource.com
+2021-07-01 18:48:11,607- Digest:SHA-256=1tvSiL94YXUDY37C8yV57p1zmleqlBSJEa31eu/OgLM=
+2021-07-01 18:48:11,607- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="D1FeLte1Ko/6lPWJoygkLMMCwJGKAp/g4a8mVsLqnNM="
+2021-07-01 18:53:17,344- /home/david/Documents/API_django_rest/profiles_api/authorizations.py changed, reloading.
+2021-07-01 19:04:27,057- START> ======================================= 
+2021-07-01 19:04:27,104- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 19:04:27,106- Using Request Target:   /pts/v2/payments
+2021-07-01 19:04:27,106- Authentication Type:   http_signature
+2021-07-01 19:04:27,107- Request-Type:      POST
+2021-07-01 19:04:27,107- Content-Type:   application/json
+2021-07-01 19:04:27,107- v-c-merchant-id:   david_payments
+2021-07-01 19:04:27,107- Date:   Thu, 01 Jul 2021 19:04:27 GMT
+2021-07-01 19:04:27,107- Host:   apitest.cybersource.com
+2021-07-01 19:04:27,107- Digest:SHA-256=iL3tPqc6P9Zh1YXVcE6ewrmsWQ56+xSAEm9UMb8BSYA=
+2021-07-01 19:04:27,108- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="WJh7HKCv7sXAtmYKbfB+9UjpbKINw2sIyCZWi/skXDQ="
+2021-07-01 19:04:27,941- START> ======================================= 
+2021-07-01 19:04:27,942- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 19:04:27,943- Using Request Target:   /pts/v2/payments/6251662677516639204002/refunds
+2021-07-01 19:04:27,943- Authentication Type:   http_signature
+2021-07-01 19:04:27,943- Request-Type:      POST
+2021-07-01 19:04:27,943- Content-Type:   application/json
+2021-07-01 19:04:27,943- v-c-merchant-id:   david_payments
+2021-07-01 19:04:27,944- Date:   Thu, 01 Jul 2021 19:04:27 GMT
+2021-07-01 19:04:27,944- Host:   apitest.cybersource.com
+2021-07-01 19:04:27,944- Digest:SHA-256=tpMH2QtwjX1BIEARDHE4xDwbh08s/Cegrv+kULifmS8=
+2021-07-01 19:04:27,944- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="pkqcdLLxbkUwh/cebSyhH3+8fZ2SytslDBldEK41Hi8="
+2021-07-01 19:07:29,422- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 19:25:09,879- START> ======================================= 
+2021-07-01 19:25:09,892- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 19:25:09,894- Using Request Target:   /pts/v2/payments
+2021-07-01 19:25:09,894- Authentication Type:   http_signature
+2021-07-01 19:25:09,894- Request-Type:      POST
+2021-07-01 19:25:09,895- Content-Type:   application/json
+2021-07-01 19:25:09,895- v-c-merchant-id:   david_payments
+2021-07-01 19:25:09,895- Date:   Thu, 01 Jul 2021 19:25:09 GMT
+2021-07-01 19:25:09,895- Host:   apitest.cybersource.com
+2021-07-01 19:25:09,895- Digest:SHA-256=u/HeLefPvfsHZMEOA+ujGzm7CLyg/on5orvR+6hpsTg=
+2021-07-01 19:25:09,895- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="YpORjM0BZxcaBSpXeNN8N7OSLQPq7YzwBI6mioUV0VI="
+2021-07-01 19:25:10,657- START> ======================================= 
+2021-07-01 19:25:10,658- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 19:25:10,659- Using Request Target:   /pts/v2/payments/6251675104046634204003/captures
+2021-07-01 19:25:10,659- Authentication Type:   http_signature
+2021-07-01 19:25:10,659- Request-Type:      POST
+2021-07-01 19:25:10,659- Content-Type:   application/json
+2021-07-01 19:25:10,659- v-c-merchant-id:   david_payments
+2021-07-01 19:25:10,660- Date:   Thu, 01 Jul 2021 19:25:10 GMT
+2021-07-01 19:25:10,660- Host:   apitest.cybersource.com
+2021-07-01 19:25:10,660- Digest:SHA-256=5lQfEe80qmigY8/fm/GsoG4JnJuBafFjThBDABPI7QI=
+2021-07-01 19:25:10,660- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="efJZrCxYD3SPFhjL9ac2jKjnCbFz/dI8q97GeWk27EI="
+2021-07-01 19:26:19,373- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 19:38:04,607- START> ======================================= 
+2021-07-01 19:38:04,630- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 19:38:04,632- Using Request Target:   /pts/v2/payments
+2021-07-01 19:38:04,632- Authentication Type:   http_signature
+2021-07-01 19:38:04,632- Request-Type:      POST
+2021-07-01 19:38:04,632- Content-Type:   application/json
+2021-07-01 19:38:04,632- v-c-merchant-id:   david_payments
+2021-07-01 19:38:04,632- Date:   Thu, 01 Jul 2021 19:38:04 GMT
+2021-07-01 19:38:04,632- Host:   apitest.cybersource.com
+2021-07-01 19:38:04,633- Digest:SHA-256=m0ckZvgjxflZiyV6NOeB/B1QIF1W0N9KBJxjoDXE+7E=
+2021-07-01 19:38:04,633- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="ht/pi2SSR2DD0sYWbWyfr+C3KmMBJnmme/Wmzk0McWU="
+2021-07-01 19:41:29,106- /home/david/Documents/API_django_rest/profiles_api/authorization_with_capture.py changed, reloading.
+2021-07-01 19:41:37,053- START> ======================================= 
+2021-07-01 19:41:37,086- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 19:41:37,087- Using Request Target:   /pts/v2/payments
+2021-07-01 19:41:37,088- Authentication Type:   http_signature
+2021-07-01 19:41:37,088- Request-Type:      POST
+2021-07-01 19:41:37,088- Content-Type:   application/json
+2021-07-01 19:41:37,088- v-c-merchant-id:   david_payments
+2021-07-01 19:41:37,088- Date:   Thu, 01 Jul 2021 19:41:37 GMT
+2021-07-01 19:41:37,088- Host:   apitest.cybersource.com
+2021-07-01 19:41:37,089- Digest:SHA-256=BOvvjWDbolLw4t143X/d4/IQT+57Z05ppJJoE7Je65s=
+2021-07-01 19:41:37,089- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="VYG+oCKubXlD+uG7oH+bHAA331Ivg3/YMvvF++tUGxQ="
+2021-07-01 20:06:35,171- START> ======================================= 
+2021-07-01 20:06:35,250- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 20:06:35,251- Using Request Target:   /pts/v2/payments
+2021-07-01 20:06:35,251- Authentication Type:   http_signature
+2021-07-01 20:06:35,251- Request-Type:      POST
+2021-07-01 20:06:35,251- Content-Type:   application/json
+2021-07-01 20:06:35,251- v-c-merchant-id:   david_payments
+2021-07-01 20:06:35,252- Date:   Thu, 01 Jul 2021 20:06:35 GMT
+2021-07-01 20:06:35,252- Host:   apitest.cybersource.com
+2021-07-01 20:06:35,252- Digest:SHA-256=rcP9+c1A6A88EmICvirI8RC9JzJp6sefev8obDUdk6o=
+2021-07-01 20:06:35,252- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="YYUOD1uwY7YJ3UOaytvFbf6ovOIo8eVivg1m9plQgIs="
+2021-07-01 20:06:36,940- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 59, in post
+    return Response(json.loads(salida))
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2021-07-01 20:08:00,906- START> ======================================= 
+2021-07-01 20:08:00,907- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 20:08:00,907- Using Request Target:   /pts/v2/payments
+2021-07-01 20:08:00,907- Authentication Type:   http_signature
+2021-07-01 20:08:00,907- Request-Type:      POST
+2021-07-01 20:08:00,908- Content-Type:   application/json
+2021-07-01 20:08:00,908- v-c-merchant-id:   david_payments
+2021-07-01 20:08:00,908- Date:   Thu, 01 Jul 2021 20:08:00 GMT
+2021-07-01 20:08:00,908- Host:   apitest.cybersource.com
+2021-07-01 20:08:00,908- Digest:SHA-256=iL3tPqc6P9Zh1YXVcE6ewrmsWQ56+xSAEm9UMb8BSYA=
+2021-07-01 20:08:00,908- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="LfFIVCrjf1Wu5jX0bEufl4HjFhU7r9rNCkSdK7M0N98="
+2021-07-01 20:08:01,263- START> ======================================= 
+2021-07-01 20:08:01,265- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 20:08:01,266- Using Request Target:   /pts/v2/payments/6251700810666692404006/refunds
+2021-07-01 20:08:01,266- Authentication Type:   http_signature
+2021-07-01 20:08:01,266- Request-Type:      POST
+2021-07-01 20:08:01,266- Content-Type:   application/json
+2021-07-01 20:08:01,266- v-c-merchant-id:   david_payments
+2021-07-01 20:08:01,267- Date:   Thu, 01 Jul 2021 20:08:01 GMT
+2021-07-01 20:08:01,267- Host:   apitest.cybersource.com
+2021-07-01 20:08:01,267- Digest:SHA-256=tpMH2QtwjX1BIEARDHE4xDwbh08s/Cegrv+kULifmS8=
+2021-07-01 20:08:01,267- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="jWjJ+KEIlBIxSD5TU0iXWPgtSqvK+vx1IzQ/6yh28SY="
+2021-07-01 20:08:43,610- START> ======================================= 
+2021-07-01 20:08:43,648- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 20:08:43,649- Using Request Target:   /pts/v2/payments
+2021-07-01 20:08:43,649- Authentication Type:   http_signature
+2021-07-01 20:08:43,649- Request-Type:      POST
+2021-07-01 20:08:43,649- Content-Type:   application/json
+2021-07-01 20:08:43,649- v-c-merchant-id:   david_payments
+2021-07-01 20:08:43,649- Date:   Thu, 01 Jul 2021 20:08:43 GMT
+2021-07-01 20:08:43,649- Host:   apitest.cybersource.com
+2021-07-01 20:08:43,649- Digest:SHA-256=7SR/S7t43P1iZqetC0d7/c/hJx/ShIAestpwW4a5rkY=
+2021-07-01 20:08:43,649- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="OVMWbqRO7cgxAFhgoLWS6n9+olVIRy6NwWFuLqQFLH0="
+2021-07-01 20:08:44,024- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 47, in post
+    return Response(json.loads(salida))
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2021-07-01 20:09:33,365- /home/david/Documents/API_django_rest/profiles_api/authorization_with_capture.py changed, reloading.
+2021-07-01 20:09:49,726- START> ======================================= 
+2021-07-01 20:09:49,726- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 20:09:49,727- Using Request Target:   /pts/v2/payments
+2021-07-01 20:09:49,728- Authentication Type:   http_signature
+2021-07-01 20:09:49,728- Request-Type:      POST
+2021-07-01 20:09:49,728- Content-Type:   application/json
+2021-07-01 20:09:49,728- v-c-merchant-id:   david_payments
+2021-07-01 20:09:49,728- Date:   Thu, 01 Jul 2021 20:09:49 GMT
+2021-07-01 20:09:49,729- Host:   apitest.cybersource.com
+2021-07-01 20:09:49,729- Digest:SHA-256=7SR/S7t43P1iZqetC0d7/c/hJx/ShIAestpwW4a5rkY=
+2021-07-01 20:09:49,729- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="eZ9cENIPflI/KZMvuiGc0sHMWz9GjEmclizzs8nU9vc="
+2021-07-01 20:09:50,537- Internal Server Error: /api/hello-view/
+Traceback (most recent call last):
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/david/Documents/API_django_rest/profiles_api/views.py", line 47, in post
+    return Response(json.loads(salida))
+  File "/home/david/anaconda3/envs/djangoenv/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2021-07-01 20:12:48,935- /home/david/Documents/API_django_rest/profiles_api/authorization_with_capture.py changed, reloading.
+2021-07-01 20:12:54,514- START> ======================================= 
+2021-07-01 20:12:54,515- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 20:12:54,516- Using Request Target:   /pts/v2/payments
+2021-07-01 20:12:54,516- Authentication Type:   http_signature
+2021-07-01 20:12:54,516- Request-Type:      POST
+2021-07-01 20:12:54,516- Content-Type:   application/json
+2021-07-01 20:12:54,516- v-c-merchant-id:   david_payments
+2021-07-01 20:12:54,516- Date:   Thu, 01 Jul 2021 20:12:54 GMT
+2021-07-01 20:12:54,516- Host:   apitest.cybersource.com
+2021-07-01 20:12:54,516- Digest:SHA-256=ZF1YrVP+OCtOYwkIskze1hgmA7D/ju/pYdrTCAWnJO8=
+2021-07-01 20:12:54,516- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="hA/+b2mPSwAkGuww8GstugiQq4Zf/PHO2EICyagoicE="
+2021-07-01 20:13:51,401- /home/david/Documents/API_django_rest/profiles_api/views.py changed, reloading.
+2021-07-01 20:14:02,746- START> ======================================= 
+2021-07-01 20:14:02,781- Mconfig >      {'authentication_type': 'http_signature', 'run_environment': 'apitest.cybersource.com', 'request_json_path': '', 'key_file_name': 'testrest', 'keys_directory': '/home/david/Documents/API_django_rest/resources', 'use_metakey': 'False', 'portfolio_id': '', 'enable_log': 'True', 'timeout': '1000', 'log_file_name': 'cybs', 'log_maximum_size': '10487560', 'log_directory': '/home/david/Documents/API_django_rest/Logs'}
+2021-07-01 20:14:02,783- Using Request Target:   /pts/v2/payments
+2021-07-01 20:14:02,783- Authentication Type:   http_signature
+2021-07-01 20:14:02,783- Request-Type:      POST
+2021-07-01 20:14:02,783- Content-Type:   application/json
+2021-07-01 20:14:02,783- v-c-merchant-id:   david_payments
+2021-07-01 20:14:02,784- Date:   Thu, 01 Jul 2021 20:14:02 GMT
+2021-07-01 20:14:02,784- Host:   apitest.cybersource.com
+2021-07-01 20:14:02,784- Digest:SHA-256=kW7/v4UM9XxqtO4GU9GEbFYFv0OJJ5vku29qopyuen4=
+2021-07-01 20:14:02,784- Signature:     keyid="276963ff-829d-42d2-9b60-80571d4c70d1", algorithm="HmacSHA256", headers="host date (request-target) digest v-c-merchant-id", signature="ff4Ez7Z/ypZXIPJ7VZwsCKs+V/Lb4omHLe2ccvwPZwU="
