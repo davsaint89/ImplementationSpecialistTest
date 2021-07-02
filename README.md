@@ -11,3 +11,13 @@ In the Option field enter one of the following options:",
 3 to void an auth transaction",
 4 to process a payment and request a refund",
 5 to trigger one decision manager rejection rule, rejecting transactions using a particular e-mail"
+
+in order to properly use this API you must install in your machine the Cybersource client with the following command:
+
+pip install cybersource-rest-client-python
+
+For more info please visit:
+
+https://github.com/CyberSource/cybersource-rest-client-python
+
+
